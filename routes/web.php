@@ -25,3 +25,19 @@ Route::get('/test3','Test\TestController@test3');
 //非对称 -》签名
 Route::get('/test4','Test\TestController@test4');
 
+
+//注册
+Route::get('/regist','Regist\RegistController@regist');
+//注册执行
+Route::post('/registdo','Regist\RegistController@registdo');
+//登录
+Route::get('/login','Regist\RegistController@login');
+//登录执行
+Route::post('/logindo','Regist\RegistController@logindo');
+
+Route::get('/index','Regist\RegistController@index');
+
+
+//测试
+Route::get('/test_a','Regist\RegistController@test');
+Route::post('/test_t','Regist\RegistController@test');
